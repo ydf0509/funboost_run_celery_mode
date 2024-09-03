@@ -12,6 +12,18 @@ funboost_run_celery_mode，  funboost的celery运行模式。
 完全无需敲击celery worker 难记的命令行。
 
 
+## 0.2 需要做的：
+
+在 funboost_config.py 中设置 ：
+```
+CELERY_BROKER_URL (必须)
+CELERY_RESULT_BACKEND (非必须)
+```
+
+设置 broker_kind 为Celery：
+
+@BoosterParams(broker_kind=BrokerEnum.CELERY)
+
 # 1  run.py 演示worker消费
 
 

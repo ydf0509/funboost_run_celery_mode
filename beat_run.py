@@ -24,4 +24,5 @@ beat_schedule = {  # 这是100% 原汁原味的celery 定时任务配置方式
 
 if __name__ == '__main__':
     CeleryHelper.celery_start_beat(beat_schedule) # 启动定时发布任务
+    f3.push(a=666,b=888)
     CeleryHelper.realy_start_celery_worker(worker_concurrency=300,start_consume_queue_name_list=[f3.queue_name]) # 启动work消费。
