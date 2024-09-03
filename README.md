@@ -26,5 +26,12 @@ CELERY_RESULT_BACKEND (非必须)
 
 # 1  run.py 演示worker消费
 
+CeleryHelper.realy_start_celery_worker(worker_concurrency=300, is_start_consume_all_queues=True)
 
-# 2 beat_run.py 演示定时任务运行
+# 2 beat_run.py 演示定时任务触发发布。
+
+CeleryHelper.celery_start_beat(beat_schedule) # 启动定时发布任务
+
+# 3 运行截图，证明100%是celery框架核心来调度函数，而不是funboost的核心来调度运行函数
+
+![img.png](img.png)
