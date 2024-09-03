@@ -15,6 +15,6 @@ def f4(x):
 if __name__ == '__main__':
     for i in range(1000):
         m1.f1.push(i)
-        f2.delay(i)
+        f2.delay(i) # delay 等于 push，两个方法名等效
         f4.push(i)
     CeleryHelper.realy_start_celery_worker(worker_concurrency=300, is_start_consume_all_queues=True)

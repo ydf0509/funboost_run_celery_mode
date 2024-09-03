@@ -12,6 +12,7 @@ funboost_run_celery_mode，  funboost的celery运行模式。
 完全无需敲击celery worker 难记的命令行。
 
 
-# 1  run.py 演示worker消费，
+# 1  run.py 演示worker消费
+
 
 # 2 beat_run.py 演示定时任务运行
